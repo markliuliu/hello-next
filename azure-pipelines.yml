@@ -18,5 +18,5 @@ steps:
     echo $(imageName)
     docker build -t $(dockerId)/$(imageName) .
     docker login -u $(dockerId) -p $(password)
-    docker push $(dockerId)/$(iamgeName)
+    docker push $(dockerId)/$(imageName)
   displayName: 'Build docker image and push image'
